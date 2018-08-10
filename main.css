@@ -1,0 +1,87 @@
+.container{
+  margin-left:auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+*{
+  box-sizing: border-box;
+  padding:7px;
+  margin:0;
+}
+
+body{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+   font-size: 12px;
+   color: black;
+   background: blanchedalmond;
+   text-align: center;
+  }
+
+img {
+    height:auto;
+    max-width: 100%;
+  }
+
+  /*  header styling  */
+
+
+header{
+  width:100%;
+  margin: auto;
+  text-align: center;
+}
+.header__box {
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 4px solid #000000;
+}
+
+.header__logo {
+  width:100%;
+  height:auto;
+  padding: 1px;
+}
+.header__inner {
+  text-align: right;
+  margin: 5px;
+  width: 100%;
+}
+  /*
+  *  main styling
+  I don't understand why I have to add both display, and flex-wrap elements
+  when I declared them in the container, if I remove them, center__image goes out of place.*/
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+}
+.featuring__work{
+  width:100%;
+}
+.work__header {
+  text-align: center;
+  width:100%;
+}
+.about__me{
+  font-size: 2em;
+}
+
+
+.box__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social {
+  width:100px;
+  height:auto;
+}
+
+footer{
+  border-top: 4px solid #000000;
+}
