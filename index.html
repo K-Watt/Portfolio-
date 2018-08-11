@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css link -->
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="responsive.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/responsive.css"/>
     <title>Udacity Scholar</title>
 </head>
 
@@ -23,7 +23,19 @@
   </header>
 
 <main>                <!-- main section of the page below the navigation drawer-->
-
+  <nav id='navigation'>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a>
+    </li>
+    <li><a href="#">Projects</a>
+      <ul>
+        <li><a href="">Project 1</a></li>
+        <li><a href="">Projec</a></li>
+      </ul></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
      <picture>
        <source media="(min-width: 650px)" srcset="images/academic__hall.jpg">
        <img src="images/academic__hall__small.jpg" alt="small image" style="width:auto;">
@@ -41,6 +53,7 @@
           <h3>Cape Girardeau</h3>
           <p>https://www.cityofcapegirardeau.org/</p>
         </div>
+
         <div class="feature__center">
           <img src="images/negative__space.jpg" alt="person working on udacity course">
           <h3>Udacity</h3>
@@ -63,4 +76,5 @@
 
 </main>
 </body>
+ <script src="JS/app.js"></script>
 </html>
